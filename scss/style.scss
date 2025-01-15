@@ -1,0 +1,167 @@
+$Soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main-BG: hsl(217, 54%, 11%);
+$card-BG:hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$grey:hsl(215, 29%, 57%);
+$White: hsl(0, 0%, 100%);
+$outfit:"Outfit",
+serif;
+
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: $outfit;
+      background-color: $main-BG;
+    color: $White;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+      width: 100%;
+  margin: 0;
+  padding: 0;
+    p {
+        margin: 0;
+    }
+
+    .card {
+        max-width: 348px;
+        border-radius: 20px;
+    margin: 144px auto;
+        padding: 24px;
+        background-color: $card-BG;
+        // background-color:transparent;
+        .card__image {
+            border-radius: 20px;
+            width: 100%;
+
+            .image-tag {
+                border-radius: 10px;
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .card__content {
+            .card__content__title {}
+
+            .card__content__desc {
+                color: $grey;
+            }
+
+            .card__content__details {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                border-bottom: 2px solid $line;
+                margin-bottom: 20px;
+
+                .balance {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .balance-icon {
+                        margin-inline-end: 5px;
+                        width: 11px;
+                        display: inline-flex;
+                        align-items: center;
+                        /* Center the icon vertically if needed */
+                        justify-content: center;
+
+                        .icon-tag {
+                            width: 11px;
+                        }
+                    }
+
+                    .balance__text {
+                        color: $cyan;
+                        font-size: 16px;
+                    }
+                }
+
+                .time {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .time-icon {
+                        margin-inline-end: 5px;
+                        width: 18px;
+                        display: inline-flex;
+                        align-items: center;
+
+                        justify-content: center;
+
+                        .icon-tag {
+                            width: 18px;
+
+                        }
+                    }
+
+                    .time-text {
+                        color: $grey;
+                        font-size: 16px;
+
+                    }
+                }
+            }
+        }
+
+        .card__auther {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .card__auther__avatar {
+                background-color: $White;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: inline-flex;
+                align-items: center;
+                margin-inline-end: 10px;
+                justify-content: center;
+
+                .avatar-icon {
+
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .card__auther__text {
+                color: $grey;
+                font-size: 16px;
+                .auther-name {
+                    color: $White;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+.card{
+    max-width: 280px;
+    margin: 44px auto;
+    padding: 20px;
+     .card__image {
+
+            .image-tag {
+                border-radius: 10px;
+                width: 240px;
+                height: 240px;
+            }
+        }
+}
+    }
+
+}

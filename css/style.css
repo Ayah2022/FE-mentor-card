@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body p {
+  margin: 0;
+}
+body .card {
+  max-width: 348px;
+  border-radius: 20px;
+  margin: 144px auto;
+  padding: 24px;
+  background-color: hsl(216, 50%, 16%);
+}
+body .card .card__image {
+  border-radius: 20px;
+  width: 100%;
+}
+body .card .card__image .image-tag {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+body .card .card__content .card__content__desc {
+  color: hsl(215, 29%, 57%);
+}
+body .card .card__content .card__content__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+  margin-bottom: 20px;
+}
+body .card .card__content .card__content__details .balance {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .card .card__content .card__content__details .balance .balance-icon {
+  margin-inline-end: 5px;
+  width: 11px;
+  display: inline-flex;
+  align-items: center;
+  /* Center the icon vertically if needed */
+  justify-content: center;
+}
+body .card .card__content .card__content__details .balance .balance-icon .icon-tag {
+  width: 11px;
+}
+body .card .card__content .card__content__details .balance .balance__text {
+  color: hsl(178, 100%, 50%);
+  font-size: 16px;
+}
+body .card .card__content .card__content__details .time {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .card .card__content .card__content__details .time .time-icon {
+  margin-inline-end: 5px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+body .card .card__content .card__content__details .time .time-icon .icon-tag {
+  width: 18px;
+}
+body .card .card__content .card__content__details .time .time-text {
+  color: hsl(215, 29%, 57%);
+  font-size: 16px;
+}
+body .card .card__auther {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .card .card__auther .card__auther__avatar {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  margin-inline-end: 10px;
+  justify-content: center;
+}
+body .card .card__auther .card__auther__avatar .avatar-icon {
+  width: 30px;
+  height: 30px;
+}
+body .card .card__auther .card__auther__text {
+  color: hsl(215, 29%, 57%);
+  font-size: 16px;
+}
+body .card .card__auther .card__auther__text .auther-name {
+  color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 700px) {
+  body .card {
+    max-width: 280px;
+    margin: 44px auto;
+    padding: 20px;
+  }
+  body .card .card__image .image-tag {
+    border-radius: 10px;
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
